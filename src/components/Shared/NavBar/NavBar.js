@@ -4,6 +4,7 @@ import Link from "next/link";
 import logo from "../../../../public/logo.png"
 import Header from "@/components/Home/Header/Header";
 import UserDropdown from "./UserDropdown/UserDropDown";
+// import Header from "@/components/Home/Header/Header";
 
 
 
@@ -11,7 +12,8 @@ const NavLinks = [
     { id: 1, name: 'Home', path: '/' },
     { id: 2, name: 'Pet-listing', path: '/pet-listing' },
     { id: 3, name: 'About', path: '/about' },
-    { id: 4, name: 'Contact', path: '/contact' },
+    { id: 4, name: 'Blog', path: '/blogs' },
+    { id: 5, name: 'Contact', path: '/contact' },
 ];
 
 const NavBar = async ({ children }) => {
@@ -55,7 +57,7 @@ const NavBar = async ({ children }) => {
                             </div>
                             <div className="flex gap-3 md:gap-5 items-center ">
                                 <Link href="/adoptHerePage">
-                                    <button className="md:text-lg  text-white rounded-full font-medium md:px-5 px-2 py-2 md:py-1 hover:bg-black bg-[#F04336]">Adopt Here</button>
+                                    <button className="md:text-lg  text-white rounded-full font-medium md:px-5 px-2 py-2 md:py-2 hover:bg-black bg-[#F04336]">Adopt Here</button>
                                 </Link>
                                 {/* <CgProfile onClick={showPopup} className="text-3xl text-[#F04336] cursor-pointer" /> */}
                             </div>
